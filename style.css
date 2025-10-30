@@ -21,6 +21,46 @@ body, a, button, input, select, textarea {
 }
 
 .hero {
-  min-height: 100vh;
-  background-color: #ccc;
+  min-height: 100svh;
+  background-color: #E1FF8F;
+  background-image: url("img/hero_bg.png");
+  background-repeat: no-repeat;
+  background-position: 5vw -45vh;
+}
+.hero__content {
+  padding-top: 156px;
+}
+.hero__title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 100%;
+  max-width: 64%;
+  padding-top: 40px;
+  margin-bottom: 24px;
+}
+.hero__text {
+  font-weight: 400;
+  max-width: 64%;
+  margin-bottom: 48px;
+}
+.hero__text-bold {
+  font-weight: 600;
+}
+.hero__btn {
+  background-color: #202027;
+  color: #FFFFFF;
+  padding: 16px 65px;
+  border-radius: 60px;
+  box-sizing: border-box;
+  border: 1px solid #202027;
+}
+
+.ticker {
+  background-color: #BCEC30;
+}
+.ticker__item {
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 110%;
 }/*# sourceMappingURL=style.css.map */
