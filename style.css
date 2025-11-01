@@ -55,6 +55,12 @@ body, a, button, input, select, textarea {
   border-radius: 60px;
   box-sizing: border-box;
   border: 1px solid #202027;
+  transition: all 0.4s;
+}
+.hero__btn:hover {
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: transparent;
 }
 
 .ticker {
@@ -99,4 +105,28 @@ body, a, button, input, select, textarea {
   width: 2.25rem;
   height: 2.25rem;
   background: url("../Homework1/img/star.svg") no-repeat center;
+}
+
+.main {
+  background-color: #202027;
+  padding-top: 94px;
+  padding-bottom: 144px;
+}
+
+.games-about {
+  min-height: 100px;
+  background-color: #fff;
+}
+
+.footer {
+  background-color: #BDED35;
+}
+.footer__content {
+  color: #000000;
+  font-size: 1.5rem;
+  line-height: 100%;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
