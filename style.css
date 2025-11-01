@@ -18,6 +18,7 @@ body, a, button, input, select, textarea {
 .center {
   max-width: 1200px;
   margin-inline: auto;
+  inline-size: min(100% - 2rem, 1200px);
 }
 
 .hero {
@@ -26,6 +27,9 @@ body, a, button, input, select, textarea {
   background-image: url("img/hero_bg.png");
   background-repeat: no-repeat;
   background-position: 5vw -45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hero__content {
   padding-top: 156px;
@@ -34,13 +38,11 @@ body, a, button, input, select, textarea {
   font-size: 4rem;
   font-weight: 700;
   line-height: 100%;
-  max-width: 64%;
   padding-top: 40px;
   margin-bottom: 24px;
 }
 .hero__text {
   font-weight: 400;
-  max-width: 64%;
   margin-bottom: 48px;
 }
 .hero__text-bold {
@@ -57,6 +59,14 @@ body, a, button, input, select, textarea {
 
 .ticker {
   background-color: #BCEC30;
+  overflow: hidden;
+}
+.ticker__list {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  list-style: none;
+  gap: 51px;
 }
 .ticker__item {
   text-transform: uppercase;
