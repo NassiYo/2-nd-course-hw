@@ -18,6 +18,7 @@ body, a, button, input, select, textarea {
 .center {
     max-width: 1200px;
     margin-inline: auto;
+    inline-size: min(100% - 2rem, 1200px); 
 }
 
 .hero {
@@ -26,6 +27,9 @@ body, a, button, input, select, textarea {
     background-image: url("img/hero_bg.png");
     background-repeat: no-repeat;
     background-position: 5vw -45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &__content {
         padding-top: 156px;
@@ -35,18 +39,17 @@ body, a, button, input, select, textarea {
         font-size: 4rem;
         font-weight: 700;
         line-height: 100%;
-        max-width: 64%;
         padding-top: 40px;
         margin-bottom: 24px;
     }
     &__text {
         font-weight: 400;
-        max-width: 64%;
         margin-bottom: 48px;
         &-bold {
             font-weight: 600;
         }
     }
+
     &__btn {
         background-color: #202027;
         color: #FFFFFF;
@@ -54,16 +57,78 @@ body, a, button, input, select, textarea {
         border-radius: 60px;
         box-sizing: border-box;
         border: 1px solid #202027;
+        transition: all 0.4s;
+        &:hover {
+            border: 1px solid #000000;
+            color:  #000000;
+            background-color: transparent;
+        }
     }
 }
 
 .ticker {
     background-color: #BCEC30;
+    overflow: hidden;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+
+    &__track {
+        display: flex;
+        width: max-content;
+        animation: ticker-scroll 25s linear infinite;
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        list-style: none;
+        gap: 51px;
+    }
+    @keyframes ticker-scroll {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-50%); }
+    }
 
     &__item {
         text-transform: uppercase;
         font-size: 1.875rem;
         font-weight: 700;
         line-height: 110%;
+        display: inline-flex;        
+        align-items: center;       
+        gap: 51px; 
+        &::after {
+            content: "";
+            width: 2.25rem;
+            height: 2.25rem;
+            // margin-top: 3px;
+            background: url("../Homework1/img/star.svg") no-repeat center;
+        }
+    }
+}
+
+.main {
+    background-color: #202027;
+    padding-top: 94px;
+    padding-bottom: 144px;
+}
+
+.games-about {
+    min-height: 100px;
+    background-color: #fff;
+}
+
+.footer{
+    background-color: #BDED35;
+    &__content {
+        color: #000000;
+        font-size: 1.5rem;
+        line-height: 100%;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }

@@ -11,14 +11,14 @@
 
 </head>
 <body>
-    <main class="main">
-        <section class="hero">
-            <div class="hero__content center">
-                <h1 class="hero__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
-                <p class="hero__text">Тебе предстоит пройти несколько увлекательных игр. <br>Если готов, нажимай <span class="hero__text-bold">«Поехали!»</span> и <span class="hero__text-bold">приступай.</span></p>
-                <button class="hero__btn">Поехали!</button>
-            </div>
-            <div class="ticker">
+    <section class="hero">
+        <div class="hero__content center">
+            <h1 class="hero__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
+            <p class="hero__text">Тебе предстоит пройти несколько увлекательных игр. <br>Если готов, нажимай <span class="hero__text-bold">«Поехали!»</span> и <span class="hero__text-bold">приступай.</span></p>
+            <button class="hero__btn">Поехали!</button>
+        </div>
+        <div class="ticker">
+            <div class="ticker__track">
                 <ul class="ticker__list">
                     <li class="ticker__item">Викторина</li>
                     <li class="ticker__item">угадай число</li>
@@ -26,7 +26,9 @@
                     <li class="ticker__item">Простая арифметика</li>
                     <li class="ticker__item">Камень, ножницы, бумага</li>
                     <li class="ticker__item">Генератор случайных цветов</li>
-                    <!-- Дублируем для эффекта бесконечной прокрутки -->
+                </ul>
+                <!-- Дублирование списка для эффекта бесконечной прогрутки -->
+                <ul class="ticker__list" aria-hidden="true">
                     <li class="ticker__item">Викторина</li>
                     <li class="ticker__item">угадай число</li>
                     <li class="ticker__item">Переверни текст</li>
@@ -34,8 +36,16 @@
                     <li class="ticker__item">Камень, ножницы, бумага</li>
                     <li class="ticker__item">Генератор случайных цветов</li>
                 </ul>
-            </div>
-        </section>
+            </div> 
+        </div>
+    </section>
+    <main class="main">
+        <section class="games-about center"></section>
     </main>
+    <footer class="footer">
+        <div class="footer__content center">
+            <small>Все права защищены.</small>
+        </div>
+    </footer>
 </body>
 </html>
