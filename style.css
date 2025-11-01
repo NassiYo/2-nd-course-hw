@@ -115,7 +115,30 @@ body, a, button, input, select, textarea {
 
 .games-about {
   min-height: 100px;
-  background-color: #fff;
+  padding-bottom: 50px;
+}
+.games-about__title {
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 24px;
+}
+.games-about__desc {
+  color: #FFFFFF;
+  max-width: 788px;
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+
+.mini-games {
+  padding-top: 46px;
+}
+.mini-games__title {
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 100%;
 }
 
 .footer {
