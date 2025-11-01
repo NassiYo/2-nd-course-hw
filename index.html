@@ -19,21 +19,25 @@
                 <button class="hero__btn">Поехали!</button>
             </div>
             <div class="ticker">
-                <ul class="ticker__list">
-                    <li class="ticker__item">Викторина</li>
-                    <li class="ticker__item">угадай число</li>
-                    <li class="ticker__item">Переверни текст</li>
-                    <li class="ticker__item">Простая арифметика</li>
-                    <li class="ticker__item">Камень, ножницы, бумага</li>
-                    <li class="ticker__item">Генератор случайных цветов</li>
-                    <!-- Дублируем для эффекта бесконечной прокрутки -->
-                    <li class="ticker__item">Викторина</li>
-                    <li class="ticker__item">угадай число</li>
-                    <li class="ticker__item">Переверни текст</li>
-                    <li class="ticker__item">Простая арифметика</li>
-                    <li class="ticker__item">Камень, ножницы, бумага</li>
-                    <li class="ticker__item">Генератор случайных цветов</li>
-                </ul>
+                <div class="ticker__track">
+                    <ul class="ticker__list">
+                        <li class="ticker__item">Викторина</li>
+                        <li class="ticker__item">угадай число</li>
+                        <li class="ticker__item">Переверни текст</li>
+                        <li class="ticker__item">Простая арифметика</li>
+                        <li class="ticker__item">Камень, ножницы, бумага</li>
+                        <li class="ticker__item">Генератор случайных цветов</li>
+                    </ul>
+                    <!-- Дублирование списка для эффекта бесконечной прогрутки -->
+                    <ul class="ticker__list" aria-hidden="true">
+                        <li class="ticker__item">Викторина</li>
+                        <li class="ticker__item">угадай число</li>
+                        <li class="ticker__item">Переверни текст</li>
+                        <li class="ticker__item">Простая арифметика</li>
+                        <li class="ticker__item">Камень, ножницы, бумага</li>
+                        <li class="ticker__item">Генератор случайных цветов</li>
+                    </ul>
+                </div> 
             </div>
         </section>
     </main>

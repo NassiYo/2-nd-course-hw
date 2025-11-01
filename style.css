@@ -60,6 +60,15 @@ body, a, button, input, select, textarea {
 .ticker {
   background-color: #BCEC30;
   overflow: hidden;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+}
+.ticker__track {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  animation: ticker-scroll 25s linear infinite;
 }
 .ticker__list {
   display: flex;
@@ -68,9 +77,26 @@ body, a, button, input, select, textarea {
   list-style: none;
   gap: 51px;
 }
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 .ticker__item {
   text-transform: uppercase;
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 110%;
+  padding-right: 87px;
+}
+.ticker__item::after {
+  content: "111";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: url("../img/star.svg") no-repeat center/contain;
+  margin-left: 51px;
 }/*# sourceMappingURL=style.css.map */
