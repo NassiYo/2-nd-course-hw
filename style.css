@@ -90,13 +90,13 @@ body, a, button, input, select, textarea {
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 110%;
-  padding-right: 87px;
+  display: inline-flex;
+  align-items: center;
+  gap: 51px;
 }
 .ticker__item::after {
-  content: "111";
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  background: url("../img/star.svg") no-repeat center/contain;
-  margin-left: 51px;
+  content: "";
+  width: 2.25rem;
+  height: 2.25rem;
+  background: url("../Homework1/img/star.svg") no-repeat center;
 }/*# sourceMappingURL=style.css.map */

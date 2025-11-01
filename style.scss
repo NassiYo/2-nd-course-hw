@@ -90,16 +90,15 @@ body, a, button, input, select, textarea {
         font-size: 1.875rem;
         font-weight: 700;
         line-height: 110%;
-        padding-right: 87px;
-
+        display: inline-flex;        
+        align-items: center;       
+        gap: 51px; 
         &::after {
-            content: "111";
-            display: inline-block;
-            width: 36px;
-            height: 36px;
-            background: url("../img/star.svg") no-repeat center / contain;
-            // background-color: black;
-            margin-left: 51px;
+            content: "";
+            width: 2.25rem;
+            height: 2.25rem;
+            // margin-top: 3px;
+            background: url("../Homework1/img/star.svg") no-repeat center;
         }
     }
 }
