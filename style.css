@@ -129,16 +129,56 @@ body, a, button, input, select, textarea {
   max-width: 788px;
   font-size: 1.5rem;
   line-height: 32px;
+  margin-bottom: 72px;
+}
+.games-about__cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: stretch;
+}
+.games-about__col {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-.mini-games {
-  padding-top: 46px;
+.games-about-card {
+  background-color: #fff;
+  border-radius: 30px;
+  padding-bottom: 36px;
+  overflow: hidden;
 }
-.mini-games__title {
-  color: #FFFFFF;
-  font-size: 4rem;
+.games-about-card__inner {
+  transition: transform 0.18s ease;
+  transform-origin: center;
+}
+.games-about-card__img {
+  width: 100%;
+}
+.games-about-card__content {
+  margin: 32px;
+}
+.games-about-card__number {
+  display: inline-block;
+  background-color: #F7F7F7;
+  border-radius: 52.58px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-inline: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 110%;
+  color: #202027;
+  margin-bottom: 16px;
+}
+.games-about-card__title {
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 100%;
+}
+
+.games-about-card:hover .games-about-card__inner {
+  transform: scale(1.04);
 }
 
 .footer {
