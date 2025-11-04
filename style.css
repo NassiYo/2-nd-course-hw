@@ -10,7 +10,7 @@ html {
 body, a, button, input, select, textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 100%;
   font-weight: 400;
   color: #202027;
 }
@@ -51,6 +51,9 @@ body, a, button, input, select, textarea {
 .hero__btn {
   background-color: #202027;
   color: #FFFFFF;
+  line-height: 142%;
+  font-size: 1.5rem;
+  font-weight: 600;
   padding: 16px 65px;
   border-radius: 60px;
   box-sizing: border-box;
@@ -114,7 +117,6 @@ body, a, button, input, select, textarea {
 }
 
 .games-about {
-  min-height: 100px;
   padding-bottom: 50px;
 }
 .games-about__title {
@@ -176,6 +178,67 @@ body, a, button, input, select, textarea {
 .games-about-card__title {
   font-size: 2rem;
   font-weight: 700;
+  line-height: 100%;
+}
+
+.games {
+  margin-top: 46px;
+}
+.games__title {
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 72px;
+}
+.games__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.games-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.games-card__img {
+  grid-column: span 1;
+  border-radius: 30px;
+}
+.games-card__content {
+  grid-column: span 1;
+  padding: 48px;
+}
+.games-card__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 100%;
+}
+.games-card__desc {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 32px;
+  margin-bottom: 36px;
+}
+.games-card__btn {
+  background-color: #202027;
+  color: #FFFFFF;
+  line-height: 142%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 16px 75.5px;
+  border-radius: 60px;
+  box-sizing: border-box;
+  border: 1px solid #202027;
+  transition: all 0.4s;
+}
+.games-card__btn:hover {
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: transparent;
 }
 
 .footer {
