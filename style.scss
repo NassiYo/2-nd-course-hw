@@ -9,8 +9,8 @@ html {
 
 body, a, button, input, select, textarea {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;     
-    line-height: 2rem;   
+    font-size: 1.5rem;   
+    line-height: 100%; 
     font-weight: 400;    
     color: #202027;
 }
@@ -25,8 +25,9 @@ body, a, button, input, select, textarea {
     min-height: 100svh;
     background-color: #E1FF8F;
     background-image: url("img/hero_bg.png");
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: 5vw -45vh;
+    background-position: calc(50% + 280px) calc(50% - 180px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,7 +53,10 @@ body, a, button, input, select, textarea {
 
     &__btn {
         background-color: #202027;
-        color: #FFFFFF;
+        color: #FFFFFF;        
+        line-height: 142%;
+        font-size: 1.5rem;
+        font-weight: 600;
         padding: 16px 65px;
         border-radius: 60px;
         box-sizing: border-box;
@@ -113,11 +117,147 @@ body, a, button, input, select, textarea {
     background-color: #202027;
     padding-top: 94px;
     padding-bottom: 144px;
+    background-image: 
+        url("img/about-games_bg.png"),
+        url("img/games_bg1.png"),
+        url("img/games_bg2.png");
+    background-size: auto;
+    background-repeat: no-repeat;   
+    background-position: 
+        calc(50% + 90px) 70px,
+        calc(50% + 615px) 1555px,
+        calc(50% + 615px) calc(100% - 50px);
 }
 
 .games-about {
-    min-height: 100px;
+    padding-bottom: 50px;
+    
+    
+    &__title {
+        color: #FFFFFF;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 100%;
+        margin-bottom: 24px;
+    }
+    &__desc {
+        color: #FFFFFF;
+        max-width: 788px;
+        font-size: 1.5rem;
+        line-height: 32px;
+        margin-bottom: 72px;
+    }
+    &__cols {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        align-items: stretch;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+.games-about-card {
     background-color: #fff;
+    border-radius: 30px;
+    padding-bottom: 36px;
+    overflow: hidden;
+    transition: transform 0.18s ease;
+    transform-origin: center;
+    &:hover {
+        transform: scale(1.07);
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__content {
+        margin: 32px;
+    }
+    &__number {
+        display: inline-block;
+        background-color: #F7F7F7;
+        border-radius: 52.58px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        padding-inline: 16px;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 110%;
+        color: #202027;
+        margin-bottom: 16px;
+    }
+    &__title {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 100%;
+    }
+}
+
+.games {
+    margin-top: 46px;
+    &__title {
+        color: #FFFFFF;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 100%;
+        margin-bottom: 72px;
+    }
+    &__content {        
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+.games-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 30px;
+    background-color: #fff;
+
+    &__img {
+        grid-column: span 1;
+        border-radius: 30px;
+    }
+    &__content {
+        grid-column: span 1;
+        padding: 48px;
+    }
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        line-height: 100%;
+    }
+    &__desc {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 32px;
+        margin-bottom: 36px;
+    }
+    &__btn {
+        background-color: #202027;
+        color: #FFFFFF;
+        line-height: 142%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 16px 75.5px;
+        border-radius: 60px;
+        box-sizing: border-box;
+        border: 1px solid #202027;
+        transition: all 0.4s;
+        &:hover {
+            border: 1px solid #000000;
+            color:  #000000;
+            background-color: transparent;
+        }
+    }
 }
 
 .footer{
