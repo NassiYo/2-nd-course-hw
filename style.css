@@ -5,6 +5,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body, a, button, input, select, textarea {
@@ -34,6 +35,9 @@ body, a, button, input, select, textarea {
 }
 .hero__content {
   padding-top: 156px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .hero__title {
   font-size: 4rem;
@@ -43,6 +47,8 @@ body, a, button, input, select, textarea {
   margin-bottom: 24px;
 }
 .hero__text {
+  font-size: 1.5rem;
+  line-height: 32px;
   font-weight: 400;
   margin-bottom: 48px;
 }
@@ -52,6 +58,7 @@ body, a, button, input, select, textarea {
 .hero__btn {
   background-color: #202027;
   color: #FFFFFF;
+  text-decoration: none;
   line-height: 142%;
   font-size: 1.5rem;
   font-weight: 600;
@@ -157,6 +164,7 @@ body, a, button, input, select, textarea {
   overflow: hidden;
   transition: transform 0.18s ease;
   transform-origin: center;
+  cursor: pointer;
 }
 .games-about-card:hover {
   transform: scale(1.07);
