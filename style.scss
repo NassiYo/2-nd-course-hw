@@ -152,9 +152,10 @@ body, a, button, input, select, textarea {
     border-radius: 30px;
     padding-bottom: 36px;
     overflow: hidden;
-    &__inner {
-        transition: transform 0.18s ease;
-        transform-origin: center;
+    transition: transform 0.18s ease;
+    transform-origin: center;
+    &:hover {
+        transform: scale(1.07);
     }
 
     &__img{
@@ -183,9 +184,8 @@ body, a, button, input, select, textarea {
         font-weight: 700;
     }
 }
-.games-about-card:hover .games-about-card__inner {
-    transform: scale(1.04);
-}
+
+
 
 .footer{
     background-color: #BDED35;

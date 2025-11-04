@@ -148,10 +148,11 @@ body, a, button, input, select, textarea {
   border-radius: 30px;
   padding-bottom: 36px;
   overflow: hidden;
-}
-.games-about-card__inner {
   transition: transform 0.18s ease;
   transform-origin: center;
+}
+.games-about-card:hover {
+  transform: scale(1.07);
 }
 .games-about-card__img {
   width: 100%;
@@ -175,10 +176,6 @@ body, a, button, input, select, textarea {
 .games-about-card__title {
   font-size: 2rem;
   font-weight: 700;
-}
-
-.games-about-card:hover .games-about-card__inner {
-  transform: scale(1.04);
 }
 
 .footer {
