@@ -25,8 +25,9 @@ body, a, button, input, select, textarea {
     min-height: 100svh;
     background-color: #E1FF8F;
     background-image: url("img/hero_bg.png");
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: 5vw -45vh;
+    background-position: calc(50% + 280px) calc(50% - 180px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -116,10 +117,21 @@ body, a, button, input, select, textarea {
     background-color: #202027;
     padding-top: 94px;
     padding-bottom: 144px;
+    background-image: 
+        url("img/about-games_bg.png"),
+        url("img/games_bg1.png"),
+        url("img/games_bg2.png");
+    background-size: auto;
+    background-repeat: no-repeat;   
+    background-position: 
+        calc(50% + 90px) 70px,
+        calc(50% + 615px) 1555px,
+        calc(50% + 615px) calc(100% - 50px);
 }
 
 .games-about {
     padding-bottom: 50px;
+    
     
     &__title {
         color: #FFFFFF;
