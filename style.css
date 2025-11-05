@@ -156,11 +156,13 @@ body, a, button, input, select, textarea {
   flex-direction: column;
   gap: 32px;
 }
+.games-about__link {
+  text-decoration: none;
+}
 
 .games-about-card {
   background-color: #fff;
   border-radius: 30px;
-  padding-bottom: 36px;
   overflow: hidden;
   transition: transform 0.18s ease;
   transform-origin: center;
@@ -171,9 +173,14 @@ body, a, button, input, select, textarea {
 }
 .games-about-card__img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .games-about-card__content {
   margin: 32px;
+  margin-bottom: 36px;
 }
 .games-about-card__number {
   display: inline-block;
