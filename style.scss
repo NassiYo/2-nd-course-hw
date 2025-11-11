@@ -5,6 +5,7 @@
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body, a, button, input, select, textarea {
@@ -24,7 +25,7 @@ body, a, button, input, select, textarea {
 .hero {
     min-height: 100svh;
     background-color: #E1FF8F;
-    background-image: url("img/hero_bg.png");
+    background-image: url("./img/hero_bg.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: calc(50% + 280px) calc(50% - 180px);
@@ -34,6 +35,9 @@ body, a, button, input, select, textarea {
 
     &__content {
         padding-top: 156px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &__title {
@@ -44,6 +48,8 @@ body, a, button, input, select, textarea {
         margin-bottom: 24px;
     }
     &__text {
+        font-size: 1.5rem;
+        line-height: 32px;
         font-weight: 400;
         margin-bottom: 48px;
         &-bold {
@@ -53,7 +59,8 @@ body, a, button, input, select, textarea {
 
     &__btn {
         background-color: #202027;
-        color: #FFFFFF;        
+        color: #FFFFFF;
+        text-decoration: none;       
         line-height: 142%;
         font-size: 1.5rem;
         font-weight: 600;
@@ -90,6 +97,7 @@ body, a, button, input, select, textarea {
         list-style: none;
         gap: 51px;
     }
+
     @keyframes ticker-scroll {
         from { transform: translateX(0); }
         to   { transform: translateX(-50%); }
@@ -108,7 +116,7 @@ body, a, button, input, select, textarea {
             width: 2.25rem;
             height: 2.25rem;
             // margin-top: 3px;
-            background: url("../Homework1/img/star.svg") no-repeat center;
+            background: url("./img/star.svg") no-repeat center;
         }
     }
 }
@@ -118,9 +126,9 @@ body, a, button, input, select, textarea {
     padding-top: 94px;
     padding-bottom: 144px;
     background-image: 
-        url("img/about-games_bg.png"),
-        url("img/games_bg1.png"),
-        url("img/games_bg2.png");
+        url("./img/about-games_bg.png"),
+        url("./img/games_bg1.png"),
+        url("./img/games_bg2.png");
     background-size: auto;
     background-repeat: no-repeat;   
     background-position: 
@@ -132,7 +140,6 @@ body, a, button, input, select, textarea {
 .games-about {
     padding-bottom: 50px;
     
-    
     &__title {
         color: #FFFFFF;
         font-size: 4rem;
@@ -140,6 +147,7 @@ body, a, button, input, select, textarea {
         line-height: 100%;
         margin-bottom: 24px;
     }
+
     &__desc {
         color: #FFFFFF;
         max-width: 788px;
@@ -147,6 +155,7 @@ body, a, button, input, select, textarea {
         line-height: 32px;
         margin-bottom: 72px;
     }
+
     &__cols {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -159,26 +168,35 @@ body, a, button, input, select, textarea {
         flex-direction: column;
         gap: 32px;
     }
+
+    &__link {
+        text-decoration: none;
+    }
 }
 
 .games-about-card {
     background-color: #fff;
     border-radius: 30px;
-    padding-bottom: 36px;
     overflow: hidden;
     transition: transform 0.18s ease;
     transform-origin: center;
+    cursor: pointer;
+
     &:hover {
         transform: scale(1.07);
     }
 
     &__img{
         width: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
     &__content {
         margin: 32px;
+        margin-bottom: 36px;
     }
+
     &__number {
         display: inline-block;
         background-color: #F7F7F7;
@@ -192,6 +210,7 @@ body, a, button, input, select, textarea {
         color: #202027;
         margin-bottom: 16px;
     }
+
     &__title {
         font-size: 2rem;
         font-weight: 700;
@@ -201,6 +220,7 @@ body, a, button, input, select, textarea {
 
 .games {
     margin-top: 46px;
+
     &__title {
         color: #FFFFFF;
         font-size: 4rem;
@@ -208,6 +228,7 @@ body, a, button, input, select, textarea {
         line-height: 100%;
         margin-bottom: 72px;
     }
+
     &__content {        
         display: flex;
         flex-direction: column;
@@ -225,22 +246,26 @@ body, a, button, input, select, textarea {
         grid-column: span 1;
         border-radius: 30px;
     }
+
     &__content {
         grid-column: span 1;
         padding: 48px;
     }
+
     &__title {
         font-size: 3rem;
         font-weight: 700;
         margin-bottom: 24px;
         line-height: 100%;
     }
+
     &__desc {
         font-weight: 400;
         font-size: 1.5rem;
         line-height: 32px;
         margin-bottom: 36px;
     }
+
     &__btn {
         background-color: #202027;
         color: #FFFFFF;
@@ -252,6 +277,7 @@ body, a, button, input, select, textarea {
         box-sizing: border-box;
         border: 1px solid #202027;
         transition: all 0.4s;
+
         &:hover {
             border: 1px solid #000000;
             color:  #000000;
@@ -262,6 +288,7 @@ body, a, button, input, select, textarea {
 
 .footer{
     background-color: #BDED35;
+    
     &__content {
         color: #000000;
         font-size: 1.5rem;
