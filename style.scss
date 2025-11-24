@@ -46,12 +46,15 @@ body, a, button, input, select, textarea {
         line-height: 100%;
         padding-top: 40px;
         margin-bottom: 24px;
+        max-width: 769px;
     }
     &__text {
         font-size: 1.5rem;
         line-height: 32px;
         font-weight: 400;
         margin-bottom: 48px;
+        max-width: 720px;
+        padding-inline: 23.5px;
         &-bold {
             font-weight: 600;
         }
@@ -87,7 +90,7 @@ body, a, button, input, select, textarea {
     &__track {
         display: flex;
         width: max-content;
-        animation: ticker-scroll 25s linear infinite;
+        animation: ticker-scroll 40s linear infinite;
     }
     
     &__list {
@@ -117,6 +120,7 @@ body, a, button, input, select, textarea {
             height: 2.25rem;
             // margin-top: 3px;
             background: url("./img/star.svg") no-repeat center;
+            background-size: contain;
         }
     }
 }
@@ -299,3 +303,5 @@ body, a, button, input, select, textarea {
         padding-bottom: 60px;
     }
 }
+
+@import "mobile"

@@ -45,12 +45,15 @@ body, a, button, input, select, textarea {
   line-height: 100%;
   padding-top: 40px;
   margin-bottom: 24px;
+  max-width: 769px;
 }
 .hero__text {
   font-size: 1.5rem;
   line-height: 32px;
   font-weight: 400;
   margin-bottom: 48px;
+  max-width: 720px;
+  padding-inline: 23.5px;
 }
 .hero__text-bold {
   font-weight: 600;
@@ -85,7 +88,7 @@ body, a, button, input, select, textarea {
   display: flex;
   width: -moz-max-content;
   width: max-content;
-  animation: ticker-scroll 25s linear infinite;
+  animation: ticker-scroll 40s linear infinite;
 }
 .ticker__list {
   display: flex;
@@ -116,6 +119,7 @@ body, a, button, input, select, textarea {
   width: 2.25rem;
   height: 2.25rem;
   background: url("./img/star.svg") no-repeat center;
+  background-size: contain;
 }
 
 .main {
@@ -272,4 +276,55 @@ body, a, button, input, select, textarea {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 10.6666666666px;
+  }
+  .hero {
+    background-image: url("./img/hero_bg_mobile.png");
+    background-position: calc(50% + 84px) calc(50% - 106px);
+  }
+  .hero__content {
+    align-items: center;
+    padding-top: 107px;
+  }
+  .hero__title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .hero__text {
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 36px;
+  }
+  .hero__btn {
+    padding-inline: 103.5px;
+  }
+  .ticker {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .ticker__list {
+    gap: 27.4px;
+  }
+  .ticker__item {
+    font-size: 1.5rem;
+    letter-spacing: 0.04em;
+    gap: 27.4px;
+  }
+  .ticker__item::after {
+    width: 1.813125rem;
+    height: 1.813125rem;
+  }
+  .games-about {
+    display: none;
+  }
+  .games-card {
+    grid-template-columns: 1fr;
+  }
+  .games-card__img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

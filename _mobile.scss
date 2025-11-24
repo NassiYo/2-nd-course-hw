@@ -1,0 +1,57 @@
+@media (max-width: 767px) {
+    html {
+        font-size: 10.6666666666px;
+    }
+
+    .hero {
+        background-image: url("./img/hero_bg_mobile.png");
+        background-position: calc(50% + 84px) calc(50% - 106px);
+
+        &__content {
+            align-items: center;
+            padding-top: 107px;
+        }
+        &__title {
+            font-size: 40px;
+            text-align: center;
+        }
+        &__text {
+            text-align: center;
+            line-height: 100%;
+            margin-bottom: 36px;
+        }
+
+        &__btn {
+            padding-inline: 103.5px;
+        }
+    }
+    .ticker {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        &__list {
+            gap: 27.4px;
+        }
+        &__item {
+            font-size: 1.5rem;
+            letter-spacing: 0.04em;
+            gap: 27.4px;
+            &::after {
+                width: 1.813125rem;
+                height: 1.813125rem;
+            }
+        }
+    }
+    .games-about {
+        display: none;
+    }
+
+    .games {
+        &-card {
+            grid-template-columns: 1fr;
+
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+}
