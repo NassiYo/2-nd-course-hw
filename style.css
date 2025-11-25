@@ -53,7 +53,6 @@ body, a, button, input, select, textarea {
   font-weight: 400;
   margin-bottom: 48px;
   max-width: 720px;
-  padding-inline: 23.5px;
 }
 .hero__text-bold {
   font-weight: 600;
@@ -177,8 +176,7 @@ body, a, button, input, select, textarea {
 }
 .games-about-card__img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
   -o-object-position: center;
      object-position: center;
 }
@@ -230,6 +228,7 @@ body, a, button, input, select, textarea {
 .games-card__img {
   grid-column: span 1;
   border-radius: 30px;
+  width: 100%;
 }
 .games-card__content {
   grid-column: span 1;
@@ -278,6 +277,11 @@ body, a, button, input, select, textarea {
   padding-bottom: 60px;
 }
 
+@media (max-width: 1199px) {
+  .games-about {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   html {
     font-size: 10.6666666666px;
@@ -298,6 +302,7 @@ body, a, button, input, select, textarea {
     text-align: center;
     line-height: 100%;
     margin-bottom: 36px;
+    padding-inline: 23.5px;
   }
   .hero__btn {
     padding-inline: 103.5px;
