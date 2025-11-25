@@ -16,3 +16,7 @@ alert(`Задание 3: Создатель JavaScript: ${JSCreator}`);
 let number1 = 10;
 let number2 = 2;
 alert(`Задание 4: Сумма: ${number1 + number2}; Разность: ${number1 - number2}; Произведение: ${number1 * number2}; Частное: ${number1 / number2}.`);
+
+// Задание 5
+let result = 2 ** 5;
+alert(`Задание 5: Результат возведения 2 в 5 степень - ${result}`);
