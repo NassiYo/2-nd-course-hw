@@ -49,3 +49,6 @@ const user = {
 };
 alert('Задание 9: Объявлен объект');
 
+// Задание 10
+let userName = prompt('Как вас зовут?');
+alert(`Привет, ${userName}!`);
