@@ -41,17 +41,63 @@
             }
         }
     }
+    
+    .main {
+        padding-top: 48px;
+        padding-bottom: 10px;
+    }
+
     .games-about {
         display: none;
-    }
+    }   
 
     .games {
+        margin-top: 0;
+
+        &__title {
+            font-size: 40px;
+            margin-bottom: 48px;
+        }
+
+        &__content {
+            gap: 24px;
+        }
+
         &-card {
             grid-template-columns: 1fr;
-
+            
             &__img {
                 width: 100%;
+                &_change-order {
+                    order: -1;
+                }
             }
+
+            &__content {
+                padding: 29px;
+                padding-bottom: 32px;
+            }
+            &__title {
+                margin-bottom: 16px;
+            }
+            &__desc {
+                line-height: 100%;
+                margin-bottom: 32px;
+            }
+            &__btn {
+                width: 100%;
+            }
+
         }
     }
+
+    .footer {
+        &__content {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    
+    
+
 }

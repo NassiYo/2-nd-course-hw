@@ -318,13 +318,48 @@ body, a, button, input, select, textarea {
     width: 1.813125rem;
     height: 1.813125rem;
   }
+  .main {
+    padding-top: 48px;
+    padding-bottom: 10px;
+  }
   .games-about {
     display: none;
+  }
+  .games {
+    margin-top: 0;
+  }
+  .games__title {
+    font-size: 40px;
+    margin-bottom: 48px;
+  }
+  .games__content {
+    gap: 24px;
   }
   .games-card {
     grid-template-columns: 1fr;
   }
   .games-card__img {
     width: 100%;
+  }
+  .games-card__img_change-order {
+    order: -1;
+  }
+  .games-card__content {
+    padding: 29px;
+    padding-bottom: 32px;
+  }
+  .games-card__title {
+    margin-bottom: 16px;
+  }
+  .games-card__desc {
+    line-height: 100%;
+    margin-bottom: 32px;
+  }
+  .games-card__btn {
+    width: 100%;
+  }
+  .footer__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
