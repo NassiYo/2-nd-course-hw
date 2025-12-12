@@ -11,3 +11,8 @@ let c = 2;
 let d = 0;
 let e = 500;
 (d > 100) || (e > 100) ? console.log("Верно") : console.log("Неверно");
+
+// Задача 4
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
