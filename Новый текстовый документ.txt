@@ -1,0 +1,22 @@
+min-height: 800px;
+    // height: 100svh;
+
+&__content {
+        padding-top: 156px;
+        padding-bottom: 156px;
+
+
+
+
+
+
+
+
+min-height: 700px;
+        background-image: url("./img/hero_bg_mobile.png");
+        background-position: calc(50% + 84px) calc(50% - 106px);
+
+        &__content {
+            align-items: center;
+            padding-top: 107px;
+            padding-bottom: 131px;
