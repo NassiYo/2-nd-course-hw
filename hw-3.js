@@ -18,7 +18,7 @@ let b = '3';
 alert(Number(a) + Number(b));
 
 // Задача 5
-monthNumber = 12;
+let monthNumber = 12;
 switch (monthNumber) {
     case 12:
     case 1:
