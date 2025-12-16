@@ -71,13 +71,19 @@
 //   console.log(`Месяц ${value} №${months.indexOf(value) + 1}`);
 // }
 
-// доп. задача 3
-const book1 = {
-    'Название': 'Alchemised',
-    'Автор': 'Син Лин Ю',
-    'Год публикации': '2025',
-    'Жанр': 'Фентези'
-};
-for (const key in book1) {
-  console.log(key, book1[key]);
-}
+// // доп. задача 3
+// const book1 = {
+//     'Название': 'Alchemised',
+//     'Автор': 'Син Лин Ю',
+//     'Год публикации': '2025',
+//     'Жанр': 'Фентези'
+// };
+// for (const key in book1) {
+//   console.log(key, book1[key]);
+// }
+
+// доп. задача 4
+const arr = [4, 65, -11, 36, -51, 82, 44, 0, -23, 12];
+
+const min = Math.min(...arr);
+console.log(min);
