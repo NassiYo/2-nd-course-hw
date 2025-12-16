@@ -24,11 +24,18 @@
 //   console.log(`${key} — зарплата ${obj[key]} долларов`);
 // }
 
-// Задача 5
-let n = 1000;
-let num = 0;
-while (n >= 50) {
-    n /= 2;
-    num++;
-}
-console.log(`Количество итераций - ${num}`);
+// // Задача 5
+// let n = 1000;
+// let num = 0;
+// while (n >= 50) {
+//     n /= 2;
+//     num++;
+// }
+// console.log(`Количество итераций - ${num}`);
+
+//Задача 6
+let friday = 2;
+do {
+  console.log(`Сегодня пятница, ${friday}-е число. Необходимо подготовить отчет.`);
+  friday += 7;
+} while (friday <= 31);
