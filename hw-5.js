@@ -28,3 +28,8 @@ function startGame1() {
 
 // Задача 1
 const minOfTwo = (number1, number2) => (number1 > number2) ?  number2 : number1;
+
+// Задача 2
+const isEven = (number) => (number % 2 === 0) ? "Число четное" : "Число нечетное";
+
+// Задача 3
