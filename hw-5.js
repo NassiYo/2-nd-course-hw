@@ -26,3 +26,5 @@ function startGame1() {
     }
 }
 
+// Задача 1
+const minOfTwo = (number1, number2) => (number1 > number2) ?  number2 : number1;
