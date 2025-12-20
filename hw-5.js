@@ -33,3 +33,11 @@ const minOfTwo = (number1, number2) => (number1 > number2) ?  number2 : number1;
 const isEven = (number) => (number % 2 === 0) ? "Число четное" : "Число нечетное";
 
 // Задача 3
+// Функция выводит результат в консоль
+function square(x) {
+    console.log(x * x);
+};
+
+// Функция возвращает результат
+const square1 = x => x * x;
+
