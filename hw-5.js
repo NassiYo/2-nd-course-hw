@@ -4,6 +4,12 @@ function startGame1() {
 
     while (true) {
         let userNumber = prompt('Угадай число от 1 до 100');
+
+        if (userNumber === null) {
+            alert("Игра отменена");
+            break;
+        }
+
         userNumber = Number(userNumber);
 
         if (Number.isNaN(userNumber)) {
