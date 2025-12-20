@@ -53,3 +53,7 @@ function ageCheck() {
         alert('Добро пожаловать!');
     }
 };
+
+// Задача 5
+
+const multiplication = (number1, number2) => (typeof number1 !== "number" || Number.isNaN(number1) || typeof number2 !== "number" || Number.isNaN(number2)) ? 'Одно или оба значения не являются числом' : number1 * number2;
