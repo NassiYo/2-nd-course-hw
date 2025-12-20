@@ -55,11 +55,9 @@ function ageCheck() {
 };
 
 // Задача 5
-
 const multiplication = (number1, number2) => (typeof number1 !== "number" || Number.isNaN(number1) || typeof number2 !== "number" || Number.isNaN(number2)) ? 'Одно или оба значения не являются числом' : number1 * number2;
 
 // Задача 6
-
 const cube = () => {
     const input = prompt("Введите число");
     const num = Number(input);
@@ -71,3 +69,24 @@ const cube = () => {
     return `${num} в кубе равняется ${num ** 3}`;
      
 }
+
+// Задача 6
+
+const circle1 = {
+    radius: 3,
+    getArea() {
+        return Math.PI * this.radius ** 2;
+    },
+    getPerimeter() {
+        return 2 * Math.PI * this.radius;
+    }
+};
+const circle2 = {
+    radius: 56,
+    getArea() {
+        return Math.PI * this.radius ** 2;
+    },
+    getPerimeter() {
+        return 2 * Math.PI * this.radius;
+    }
+};
