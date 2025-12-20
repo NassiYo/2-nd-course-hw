@@ -57,3 +57,17 @@ function ageCheck() {
 // Задача 5
 
 const multiplication = (number1, number2) => (typeof number1 !== "number" || Number.isNaN(number1) || typeof number2 !== "number" || Number.isNaN(number2)) ? 'Одно или оба значения не являются числом' : number1 * number2;
+
+// Задача 6
+
+const cube = () => {
+    const input = prompt("Введите число");
+    const num = Number(input);
+
+    if (typeof num !== "number" || Number.isNaN(num)) {
+        return 'Переданный параметр не является числом'
+    }
+
+    return `${num} в кубе равняется ${num ** 3}`;
+     
+}
