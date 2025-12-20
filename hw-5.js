@@ -70,7 +70,7 @@ const cube = () => {
      
 }
 
-// Задача 6
+// Задача 7
 
 const circle1 = {
     radius: 3,
