@@ -32,12 +32,16 @@
 // };
 // console.log(arr5);
 
-// Задача 6
-const arr6 = [9, 8, 7, 'a', 6, 5];
-arr6.sort();
-const arrOfNumb = arr6.filter(x => x !== 'a');
-console.log(arrOfNumb);
+// // Задача 6
+// const arr6 = [9, 8, 7, 'a', 6, 5];
+// arr6.sort();
+// const arrOfNumb = arr6.filter(x => x !== 'a');
+// console.log(arrOfNumb);
 
+// Задача 7
+const arr7 = [9, 8, 7, 6, 5];
+let userInput = Number(prompt('Угадай число?'));
+(arr7.includes(userInput)) ? console.log('Угадал!') : console.log('Не угадал!');
 
 
 // // Задача 9
