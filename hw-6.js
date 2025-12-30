@@ -11,9 +11,19 @@
 // const arr2 = [1, 5, 4, 10, 0, 3];
 // console.log(arr2.indexOf(4));
 
-// Задача 3
-const arr3 = [1, 3, 5, 10, 20];
-console.log(arr3.join(' '));
+// // Задача 3
+// const arr3 = [1, 3, 5, 10, 20];
+// console.log(arr3.join(' '));
+
+// Задача 4
+const arr4 = [];
+for (let i = 0; i < 3; i++) {
+    arr4[i] = [];
+    for (let j = 0; j < 3; j++) {
+        arr4[i][j] = 1;
+    };
+}
+console.log(arr4);
 
 // // Задача 9
 // const arr9 = [[1, 2, 3],[4, 5, 6]];
