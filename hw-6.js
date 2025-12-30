@@ -1,11 +1,15 @@
-// Задача 1
-const arr1 = [1, 5, 4, 10, 0, 3];
-for (let i = 0; i < arr1.length; i++) {
-    console.log(arr1[i]);
-    if (arr1[i] === 10) {
-        break;
-    }
-};
+// // Задача 1
+// const arr1 = [1, 5, 4, 10, 0, 3];
+// for (let i = 0; i < arr1.length; i++) {
+//     console.log(arr1[i]);
+//     if (arr1[i] === 10) {
+//         break;
+//     }
+// };
+
+// Задача 2
+const arr2 = [1, 5, 4, 10, 0, 3];
+console.log(arr2.indexOf(4));
 
 // // Задача 9
 // const arr9 = [[1, 2, 3],[4, 5, 6]];
