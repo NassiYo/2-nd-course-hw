@@ -25,12 +25,19 @@
 // };
 // console.log(arr4);
 
-// Задача 5
-const arr5 = [1, 1, 1];
-for (let i = 0; i <3; i++) {
-    arr5.push(2);
-};
-console.log(arr5);
+// // Задача 5
+// const arr5 = [1, 1, 1];
+// for (let i = 0; i <3; i++) {
+//     arr5.push(2);
+// };
+// console.log(arr5);
+
+// Задача 6
+const arr6 = [9, 8, 7, 'a', 6, 5];
+arr6.sort();
+const arrOfNumb = arr6.filter(x => x !== 'a');
+console.log(arrOfNumb);
+
 
 
 // // Задача 9
