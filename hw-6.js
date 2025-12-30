@@ -15,15 +15,23 @@
 // const arr3 = [1, 3, 5, 10, 20];
 // console.log(arr3.join(' '));
 
-// Задача 4
-const arr4 = [];
-for (let i = 0; i < 3; i++) {
-    arr4[i] = [];
-    for (let j = 0; j < 3; j++) {
-        arr4[i][j] = 1;
-    };
-}
-console.log(arr4);
+// // Задача 4
+// const arr4 = [];
+// for (let i = 0; i < 3; i++) {
+//     arr4[i] = [];
+//     for (let j = 0; j < 3; j++) {
+//         arr4[i][j] = 1;
+//     };
+// };
+// console.log(arr4);
+
+// Задача 5
+const arr5 = [1, 1, 1];
+for (let i = 0; i <3; i++) {
+    arr5.push(2);
+};
+console.log(arr5);
+
 
 // // Задача 9
 // const arr9 = [[1, 2, 3],[4, 5, 6]];
