@@ -7,9 +7,13 @@
 //     }
 // };
 
-// Задача 2
-const arr2 = [1, 5, 4, 10, 0, 3];
-console.log(arr2.indexOf(4));
+// // Задача 2
+// const arr2 = [1, 5, 4, 10, 0, 3];
+// console.log(arr2.indexOf(4));
+
+// Задача 3
+const arr3 = [1, 3, 5, 10, 20];
+console.log(arr3.join(' '));
 
 // // Задача 9
 // const arr9 = [[1, 2, 3],[4, 5, 6]];
