@@ -38,11 +38,17 @@
 // const arrOfNumb = arr6.filter(x => x !== 'a');
 // console.log(arrOfNumb);
 
-// Задача 7
-const arr7 = [9, 8, 7, 6, 5];
-let userInput = Number(prompt('Угадай число?'));
-(arr7.includes(userInput)) ? console.log('Угадал!') : console.log('Не угадал!');
+// // Задача 7
+// const arr7 = [9, 8, 7, 6, 5];
+// let userInput = Number(prompt('Угадай число?'));
+// (arr7.includes(userInput)) ? console.log('Угадал!') : console.log('Не угадал!');
 
+// Задача 8
+let str = 'abcdef';
+const arr8 = str.split("");
+arr8.reverse();
+str = arr8.join('');
+console.log(str);
 
 // // Задача 9
 // const arr9 = [[1, 2, 3],[4, 5, 6]];
