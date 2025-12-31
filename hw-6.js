@@ -54,17 +54,23 @@
 // const arr9 = [[1, 2, 3],[4, 5, 6]];
 // console.log([...arr9[0], ...arr9[1]]);
 
-// Задача 10
-let arr10 = [];
+// // Задача 10
+// let arr10 = [];
 
-for (let i = 0; i < 10; i++) {
-    arr10.push(Math.floor(Math.random() * 10) + 1);
-};
-console.log(arr10);
-// for (let i = 0; i < 9; i++) {
-//     console.log(arr10[i]+arr10[i + 1])
+// for (let i = 0; i < 10; i++) {
+//     arr10.push(Math.floor(Math.random() * 10) + 1);
 // };
+// console.log(arr10);
+// // for (let i = 0; i < 9; i++) {
+// //     console.log(arr10[i]+arr10[i + 1])
+// // };
 
-// Задача 11
-const arrSquare = (arr) => arr.map(x => x ** 2);
-console.log(arrSquare(arr10));
+// // Задача 11
+// const arrSquare = (arr) => arr.map(x => x ** 2);
+// console.log(arrSquare(arr10));
+
+// Задача 12
+const arr12 = ['dfgkjwagjafnjk', 'sauygbj4g2r', '', 'dg', 'hfhhfh', 'fkdghjfbvhfey334534 f  rer '];
+const lengthStrCountArr = (arr) => arr.map(x => x.length);
+console.log(lengthStrCountArr(arr12));
+
