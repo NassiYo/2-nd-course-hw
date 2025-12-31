@@ -43,24 +43,28 @@
 // let userInput = Number(prompt('Угадай число?'));
 // (arr7.includes(userInput)) ? console.log('Угадал!') : console.log('Не угадал!');
 
-// Задача 8
-let str = 'abcdef';
-const arr8 = str.split("");
-arr8.reverse();
-str = arr8.join('');
-console.log(str);
+// // Задача 8
+// let str = 'abcdef';
+// const arr8 = str.split("");
+// arr8.reverse();
+// str = arr8.join('');
+// console.log(str);
 
 // // Задача 9
 // const arr9 = [[1, 2, 3],[4, 5, 6]];
 // console.log([...arr9[0], ...arr9[1]]);
 
-// // Задача 10
-// let arr10 = [];
+// Задача 10
+let arr10 = [];
 
-// for (let i = 0; i < 10; i++) {
-//     arr10.push(Math.floor(Math.random() * 10) + 1);
-// };
-// console.log(arr10);
+for (let i = 0; i < 10; i++) {
+    arr10.push(Math.floor(Math.random() * 10) + 1);
+};
+console.log(arr10);
 // for (let i = 0; i < 9; i++) {
 //     console.log(arr10[i]+arr10[i + 1])
 // };
+
+// Задача 11
+const arrSquare = (arr) => arr.map(x => x ** 2);
+console.log(arrSquare(arr10));
