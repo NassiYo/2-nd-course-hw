@@ -79,11 +79,22 @@
 // const negativeArr = (arr) => arr.filter(x => x < 0);
 // console.log(negativeArr(arr13));
 
-// Задача 14
-let arr14 = [];
-for (let i = 0; i < 10; i++) {
-    arr14.push(Math.floor(Math.random() * 10) + 1);
+// // Задача 14
+// let arr14 = [];
+// for (let i = 0; i < 10; i++) {
+//     arr14.push(Math.floor(Math.random() * 10) + 1);
+// };
+// console.log(arr14);
+// const evenArr = (arr) => arr.filter(x => x % 2 === 0);
+// console.log(evenArr(arr14));
+
+// Задача 15
+let arr15 = [];
+
+for (let i = 0; i < 6; i++) {
+    arr15.push(Math.floor(Math.random() * 10) + 1);
 };
-console.log(arr14);
-const evenArr = (arr) => arr.filter(x => x % 2 === 0);
-console.log(evenArr(arr14));
+console.log(arr15);
+
+let averageValue = arr15.reduce((sum, value) => sum + value, 0) / arr15.length;
+console.log(averageValue);
