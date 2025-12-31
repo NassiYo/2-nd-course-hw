@@ -74,7 +74,16 @@
 // const lengthStrCountArr = (arr) => arr.map(x => x.length);
 // console.log(lengthStrCountArr(arr12));
 
-// Задача 13
-const arr13 = [7, -7, -10, 5, 9, 10, -10, 2, 1, -1];
-const negativeArr = (arr) => arr.filter(x => x < 0);
-console.log(negativeArr(arr13));
+// // Задача 13
+// const arr13 = [7, -7, -10, 5, 9, 10, -10, 2, 1, -1];
+// const negativeArr = (arr) => arr.filter(x => x < 0);
+// console.log(negativeArr(arr13));
+
+// Задача 14
+let arr14 = [];
+for (let i = 0; i < 10; i++) {
+    arr14.push(Math.floor(Math.random() * 10) + 1);
+};
+console.log(arr14);
+const evenArr = (arr) => arr.filter(x => x % 2 === 0);
+console.log(evenArr(arr14));
