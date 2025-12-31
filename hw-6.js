@@ -69,8 +69,12 @@
 // const arrSquare = (arr) => arr.map(x => x ** 2);
 // console.log(arrSquare(arr10));
 
-// Задача 12
-const arr12 = ['dfgkjwagjafnjk', 'sauygbj4g2r', '', 'dg', 'hfhhfh', 'fkdghjfbvhfey334534 f  rer '];
-const lengthStrCountArr = (arr) => arr.map(x => x.length);
-console.log(lengthStrCountArr(arr12));
+// // Задача 12
+// const arr12 = ['dfgkjwagjafnjk', 'sauygbj4g2r', '', 'dg', 'hfhhfh', 'fkdghjfbvhfey334534 f  rer '];
+// const lengthStrCountArr = (arr) => arr.map(x => x.length);
+// console.log(lengthStrCountArr(arr12));
 
+// Задача 13
+const arr13 = [7, -7, -10, 5, 9, 10, -10, 2, 1, -1];
+const negativeArr = (arr) => arr.filter(x => x < 0);
+console.log(negativeArr(arr13));
