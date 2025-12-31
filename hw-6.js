@@ -1,3 +1,36 @@
+// Игра "Простая арифметика"
+function startGame2() {
+    const ops = ['+', '-', '*', '/'];
+    let op = ops[Math.floor(Math.random() * ops.length)];
+    
+    let num1 = Math.floor((Math.random() * 30) + 1);
+    let num2 = Math.floor((Math.random() * 10) + 1);
+
+    if (op === '/') {
+        num1 = num1 * num2;
+    }
+    
+    let userInput = Number(prompt(`${num1} ${op} ${num2} = `));
+
+    let answer;
+    switch (op) {
+        case '+':
+            answer = num1 + num2;
+            break;
+        case '-':
+            answer = num1 - num2;
+            break;
+        case '*':
+            answer = num1 * num2;
+            break;
+        case '/':
+            answer = num1 / num2;
+            break;
+    }
+    
+    (userInput === answer) ? alert('Ответ верный') : alert('Ошибка');
+};
+
 // // Задача 1
 // const arr1 = [1, 5, 4, 10, 0, 3];
 // for (let i = 0; i < arr1.length; i++) {
@@ -88,13 +121,13 @@
 // const evenArr = (arr) => arr.filter(x => x % 2 === 0);
 // console.log(evenArr(arr14));
 
-// Задача 15
-let arr15 = [];
+// // Задача 15
+// let arr15 = [];
 
-for (let i = 0; i < 6; i++) {
-    arr15.push(Math.floor(Math.random() * 10) + 1);
-};
-console.log(arr15);
+// for (let i = 0; i < 6; i++) {
+//     arr15.push(Math.floor(Math.random() * 10) + 1);
+// };
+// console.log(arr15);
 
-let averageValue = arr15.reduce((sum, value) => sum + value, 0) / arr15.length;
-console.log(averageValue);
+// let averageValue = arr15.reduce((sum, value) => sum + value, 0) / arr15.length;
+// console.log(averageValue);
