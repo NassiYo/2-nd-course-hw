@@ -67,7 +67,10 @@ function reternArrStartWithStr(arr, str) {
 // console.log(`Результат округления числа ${num3} до БОЛЬШЕГО целого: ${Math.ceil(num3)}`);
 // console.log(`Результат округления числа ${num3} до БЛИЖАЙШЕГО целого: ${Math.round(num3)}`);
 
-// Задача 4
-const arr4 = [52, 53, 49, 77, 21, 32];
-console.log(`Даны числа ${arr4}.\nМинимальное число: ${Math.min(...arr4)}\nМакимальное число: ${Math.max(...arr4)}`);
+// // Задача 4
+// const arr4 = [52, 53, 49, 77, 21, 32];
+// console.log(`Даны числа ${arr4}.\nМинимальное число: ${Math.min(...arr4)}\nМакимальное число: ${Math.max(...arr4)}`);
 
+// Задача 5
+const randomNumber = () => console.log(Math.floor(Math.random() * 10) + 1);
+randomNumber();
