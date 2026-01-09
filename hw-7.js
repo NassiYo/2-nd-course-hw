@@ -95,11 +95,33 @@ function reternArrStartWithStr(arr, str) {
 // const date = new Date();
 // console.log('Сегодня ' + date.toLocaleDateString() + ' года');
 
-// Задача 9
-const currentDate = new Date();
-// const dateIn73days = new Date(+currentDate + (73 * 24 * 60 * 60 * 1000));
-// console.log(`Сегодня ${currentDate.toLocaleDateString()} года, а через 73 дня будет ${dateIn73days.toLocaleDateString()} года`);
+// // Задача 9
+// const currentDate = new Date();
+// // const dateIn73days = new Date(+currentDate + (73 * 24 * 60 * 60 * 1000));
+// // console.log(`Сегодня ${currentDate.toLocaleDateString()} года, а через 73 дня будет ${dateIn73days.toLocaleDateString()} года`);
 
-const dateIn73Days = new Date(currentDate);
-dateIn73Days.setDate(currentDate.getDate() + 73);
-console.log(`Сегодня ${currentDate.toLocaleDateString()} года, а через 73 дня будет ${dateIn73Days.toLocaleDateString()} года`);
+// const dateIn73Days = new Date(currentDate);
+// dateIn73Days.setDate(currentDate.getDate() + 73);
+// console.log(`Сегодня ${currentDate.toLocaleDateString()} года, а через 73 дня будет ${dateIn73Days.toLocaleDateString()} года`);
+
+// Задача 10
+const someDate = new Date();
+function getFormatDate(date) {
+    const months = [
+        "января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"
+    ];
+
+    const days = [
+        "воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"
+    ];
+
+    const day = date.getDate();
+    const month = months[date.getMonth()];
+    const year = date.getFullYear();
+    const weekday = days[date.getDay()];
+    const time = date.toLocaleTimeString('ru-Ru');
+
+    return `Дата: ${day} ${month} ${year} — это ${weekday}.\nВремя: ${time}`;
+
+};
+console.log(getFormatDate(someDate));
