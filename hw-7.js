@@ -61,9 +61,13 @@ function reternArrStartWithStr(arr, str) {
 // const str2 = 'qwE';
 // console.log(reternArrStartWithStr(arr2, str2));
 
-// Задача 3
-const num3 = 32.58884;
-console.log(`Результат округления числа ${num3} до МЕНЬШЕГО целого: ${Math.floor(num3)}`);
-console.log(`Результат округления числа ${num3} до БОЛЬШЕГО целого: ${Math.ceil(num3)}`);
-console.log(`Результат округления числа ${num3} до БЛИЖАЙШЕГО целого: ${Math.round(num3)}`);
+// // Задача 3
+// const num3 = 32.58884;
+// console.log(`Результат округления числа ${num3} до МЕНЬШЕГО целого: ${Math.floor(num3)}`);
+// console.log(`Результат округления числа ${num3} до БОЛЬШЕГО целого: ${Math.ceil(num3)}`);
+// console.log(`Результат округления числа ${num3} до БЛИЖАЙШЕГО целого: ${Math.round(num3)}`);
+
+// Задача 4
+const arr4 = [52, 53, 49, 77, 21, 32];
+console.log(`Даны числа ${arr4}.\nМинимальное число: ${Math.min(...arr4)}\nМакимальное число: ${Math.max(...arr4)}`);
 
