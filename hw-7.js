@@ -75,18 +75,22 @@ function reternArrStartWithStr(arr, str) {
 // const randomNumber = () => console.log(Math.floor(Math.random() * 10) + 1);
 // randomNumber();
 
-// Задача 6
-const getArrRandomNumbers0toNumber = (number) => {
-    const randomNumber = Math.floor(Math.random() * (number + 1));
-    const arr = [];
-    for (let i = 0; i < Math.floor(number / 2); i++) {
-        arr.push(Math.floor(Math.random() * (number + 1)));
-    }
-    return arr;
-}
-console.log(getArrRandomNumbers0toNumber(9));
+// // Задача 6
+// const getArrRandomNumbers0toNumber = (number) => {
+//     const randomNumber = Math.floor(Math.random() * (number + 1));
+//     const arr = [];
+//     for (let i = 0; i < Math.floor(number / 2); i++) {
+//         arr.push(Math.floor(Math.random() * (number + 1)));
+//     }
+//     return arr;
+// }
+// console.log(getArrRandomNumbers0toNumber(9));
 
 // // Задача 7
 // const randomNumberFromN1ToN2 = (n1, n2) => Math.floor(Math.random() * (n2 - n1 + 1)) + n1;
 // // Функция, где (n2 - n1 + 1) -- Число возможных значений, + n1 -- начало отсчета возможных значений начиная с числа n1
 // console.log(randomNumberFromN1ToN2(3, 6));
+
+// Задача 8
+const date = new Date();
+console.log(date.toLocaleDateString());
