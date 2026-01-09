@@ -48,6 +48,16 @@ function startGame5() {
 }
 
 
-//Задача 1
-const str1 = 'js';
-console.log(str1.toUpperCase());
+// //Задача 1
+// const str1 = 'js';
+// console.log(str1.toUpperCase());
+
+// Задача 2
+function reternArrStartWithStr(arr, str) {
+    return newArr = arr.filter((item => item.startsWith(str)));
+};
+
+const arr2 = ['qwerty', 'awerty', 'qwefgh', 'qertygff', 'qwecvb',];
+const str2 = 'qwe';
+console.log(reternArrStartWithStr(arr2, str2));
+
