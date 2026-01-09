@@ -71,6 +71,11 @@ function reternArrStartWithStr(arr, str) {
 // const arr4 = [52, 53, 49, 77, 21, 32];
 // console.log(`Даны числа ${arr4}.\nМинимальное число: ${Math.min(...arr4)}\nМакимальное число: ${Math.max(...arr4)}`);
 
-// Задача 5
-const randomNumber = () => console.log(Math.floor(Math.random() * 10) + 1);
-randomNumber();
+// // Задача 5
+// const randomNumber = () => console.log(Math.floor(Math.random() * 10) + 1);
+// randomNumber();
+
+// Задача 7
+const randomNumberFromN1ToN2 = (n1, n2) => Math.floor(Math.random() * (n2 - n1 + 1)) + n1;
+// Функция, где (n2 - n1 + 1) -- Число возможных значений, + n1 -- начало отсчета возможных значений начиная с числа n1
+console.log(randomNumberFromN1ToN2(3, 6));
