@@ -57,9 +57,13 @@ function reternArrStartWithStr(arr, str) {
     return newArr = arr.filter((item => item.toLowerCase().startsWith(str.toLowerCase())));
 };
 
-const arr2 = ['Qwerty', 'awerty', 'qWefgh', 'qertygff', 'qwecvb',];
-const str2 = 'qwE';
-console.log(reternArrStartWithStr(arr2, str2));
+// const arr2 = ['Qwerty', 'awerty', 'qWefgh', 'qertygff', 'qwecvb',];
+// const str2 = 'qwE';
+// console.log(reternArrStartWithStr(arr2, str2));
 
 // Задача 3
+const num3 = 32.58884;
+console.log(`Результат округления числа ${num3} до МЕНЬШЕГО целого: ${Math.floor(num3)}`);
+console.log(`Результат округления числа ${num3} до БОЛЬШЕГО целого: ${Math.ceil(num3)}`);
+console.log(`Результат округления числа ${num3} до БЛИЖАЙШЕГО целого: ${Math.round(num3)}`);
 
