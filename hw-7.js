@@ -54,10 +54,12 @@ function startGame5() {
 
 // Задача 2
 function reternArrStartWithStr(arr, str) {
-    return newArr = arr.filter((item => item.startsWith(str)));
+    return newArr = arr.filter((item => item.toLowerCase().startsWith(str.toLowerCase())));
 };
 
-const arr2 = ['qwerty', 'awerty', 'qwefgh', 'qertygff', 'qwecvb',];
-const str2 = 'qwe';
+const arr2 = ['Qwerty', 'awerty', 'qWefgh', 'qertygff', 'qwecvb',];
+const str2 = 'qwE';
 console.log(reternArrStartWithStr(arr2, str2));
+
+// Задача 3
 
