@@ -93,4 +93,4 @@ function reternArrStartWithStr(arr, str) {
 
 // Задача 8
 const date = new Date();
-console.log(date.toLocaleDateString());
+console.log('Сегодня ' + date.toLocaleDateString() + ' года');
