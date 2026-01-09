@@ -91,6 +91,15 @@ function reternArrStartWithStr(arr, str) {
 // // Функция, где (n2 - n1 + 1) -- Число возможных значений, + n1 -- начало отсчета возможных значений начиная с числа n1
 // console.log(randomNumberFromN1ToN2(3, 6));
 
-// Задача 8
-const date = new Date();
-console.log('Сегодня ' + date.toLocaleDateString() + ' года');
+// // Задача 8
+// const date = new Date();
+// console.log('Сегодня ' + date.toLocaleDateString() + ' года');
+
+// Задача 9
+const currentDate = new Date();
+// const dateIn73days = new Date(+currentDate + (73 * 24 * 60 * 60 * 1000));
+// console.log(`Сегодня ${currentDate.toLocaleDateString()} года, а через 73 дня будет ${dateIn73days.toLocaleDateString()} года`);
+
+const dateIn73Days = new Date(currentDate);
+dateIn73Days.setDate(currentDate.getDate() + 73);
+console.log(`Сегодня ${currentDate.toLocaleDateString()} года, а через 73 дня будет ${dateIn73Days.toLocaleDateString()} года`);
