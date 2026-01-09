@@ -46,3 +46,8 @@ function startGame5() {
 
     alert(`Количество правильных ответов: ${pointsCounter}`);
 }
+
+
+//Задача 1
+const str1 = 'js';
+console.log(str1.toUpperCase());
