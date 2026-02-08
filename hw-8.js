@@ -21,13 +21,7 @@ function startGame4() {
         result = 'проигрыш';
     };
     alert(`Результат - ${result}.`);
-}
-
-
-
-
-
-
+};
 
 // // Задача 1
 // const people = [
@@ -67,3 +61,16 @@ function startGame4() {
 // ];
 
 // console.log(filter(people1, isMale));
+
+// Задача 3
+
+
+const intervalID = setInterval(function DateOutput() {
+    let currentDate = new Date();
+    console.log(currentDate.toLocaleDateString());
+}, 3000);
+
+setTimeout(function DateOutputEnding() {
+    console.log('30 секунд прошло');
+    clearInterval(intervalID);
+}, 30000);
