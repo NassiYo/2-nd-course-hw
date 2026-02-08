@@ -62,15 +62,26 @@ function startGame4() {
 
 // console.log(filter(people1, isMale));
 
-// Задача 3
+// // Задача 3
+// const intervalID = setInterval(function DateOutput() {
+//     let currentDate = new Date();
+//     console.log(currentDate.toLocaleDateString());
+// }, 3000);
+
+// setTimeout(function DateOutputEnding() {
+//     console.log('30 секунд прошло');
+//     clearInterval(intervalID);
+// }, 30000);
 
 
-const intervalID = setInterval(function DateOutput() {
-    let currentDate = new Date();
-    console.log(currentDate.toLocaleDateString());
-}, 3000);
+// Задача 4
+function delayForSecond(callback) {
+    // Код писать можно только внутри этой функции
+    setTimeout(() => callback(), 1000);
+    
+    // callback();
+}
 
-setTimeout(function DateOutputEnding() {
-    console.log('30 секунд прошло');
-    clearInterval(intervalID);
-}, 30000);
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
