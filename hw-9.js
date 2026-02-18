@@ -27,3 +27,9 @@ const descriptionEls = document.querySelectorAll('.description');
 descriptionEls.forEach(element => {
     element.textContent = "Измененный текст";
 });
+
+// Задача 5
+const description5Els = document.querySelectorAll('.description5');
+description5Els.forEach(element => {
+    element.textContent = "Новый текст";
+});
