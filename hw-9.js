@@ -21,3 +21,9 @@ const btnChangeTitleEl = document.querySelector('.btn-change-title');
 btnChangeTitleEl.addEventListener('click', () => {
      titleEl.textContent = "Привет, мир!";
 });
+
+// Задача 4
+const descriptionEls = document.querySelectorAll('.description');
+descriptionEls.forEach(element => {
+    element.textContent = "Измененный текст";
+});
