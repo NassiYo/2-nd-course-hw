@@ -44,3 +44,10 @@ btnAddToEndEl.addEventListener('click', () =>{
 
     document.body.append(addedElement);
 });
+
+// Задача 7
+const btnDeleteDescEl = document.querySelector('.btn-delete-desc');
+
+btnDeleteDescEl.addEventListener('click', () => {
+    document.querySelector('.description7').remove();
+});
