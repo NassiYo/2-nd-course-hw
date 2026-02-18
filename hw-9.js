@@ -33,3 +33,14 @@ const description5Els = document.querySelectorAll('.description5');
 description5Els.forEach(element => {
     element.textContent = "Новый текст";
 });
+
+// Задача 6
+const btnAddToEndEl = document.querySelector('.btn-add-to-end');
+
+btnAddToEndEl.addEventListener('click', () =>{
+    const addedElement = document.createElement('p');
+    addedElement.textContent = "Новый абзац";
+    addedElement.classList.add('added-text');
+
+    document.body.append(addedElement);
+});
