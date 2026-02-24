@@ -2,7 +2,14 @@
 
 function startGame4() {
     const choices = ['камень', 'ножницы', 'бумага']; //массив возможных выриантов
-    let userChoice = prompt("Выбери: камень, ножницы или бумага?").toLowerCase(); //выбор пользователя сводится к нижнему регистру
+    let userChoice = prompt("Выбери: камень, ножницы или бумага?");
+    if (userChoice !== null) {
+        userChoice.toLowerCase();
+    } else {
+        
+        return;
+    };
+     //выбор пользователя сводится к нижнему регистру
     let compChoice = choices[Math.floor(Math.random() * 3)]; // выбор компьютера. Из массива возможных вариантов выбирается выриант по случайному индексу. Индекс - случайное число от 0 до 3, не включая 3. 
 
     if (choices.includes(userChoice)) {
