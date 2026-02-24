@@ -1,8 +1,14 @@
 // Игра Переверни текст
 function startGame3() {
     const userText = prompt('Введите текст');
-    const reversText = userText.split('').reverse().join('');
-    alert(reversText);
+    console.log(typeof(userText));
+    
+    if ((userText === null) || (userText === '')) {
+        alert('Ничего не введено');
+    } else {
+        const reversText = userText.split('').reverse().join('');
+        alert(reversText);
+    };
 };
 
 // Игра "Викторина"
