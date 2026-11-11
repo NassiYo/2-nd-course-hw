@@ -10,7 +10,7 @@ A collection of six interactive mini-games built as part of my frontend developm
 
 *Technologies: HTML5, CSS3, SCSS, JavaScript.*
 
-Live Demo: [Play Mini Games](https://nassiyo.github.io/javascript-mini-games/) (available after deployment)
+Live Demo: [Play Mini Games](https://nassiyo.github.io/javascript-mini-games/)
 
 ---
 Коллекция из шести интерактивных мини-игр, созданная в процессе изучения frontend-разработки.
@@ -24,6 +24,6 @@ Live Demo: [Play Mini Games](https://nassiyo.github.io/javascript-mini-games/) (
 
 *Технологии: HTML5, CSS3, SCSS, JavaScript.* 
 
-Демо: [Открыть сайт](https://nassiyo.github.io/javascript-mini-games/) (после публикации)
+Демо: [Открыть сайт](https://nassiyo.github.io/javascript-mini-games/)
 ---
 **Автор / Author:** [Anastasia Antonova](https://github.com/NassiYo)
