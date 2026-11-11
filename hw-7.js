@@ -1,8 +1,14 @@
 // Игра Переверни текст
 function startGame3() {
     const userText = prompt('Введите текст');
-    const reversText = userText.split('').reverse().join('');
-    alert(reversText);
+    console.log(typeof(userText));
+    
+    if ((userText === null) || (userText === '')) {
+        alert('Ничего не введено');
+    } else {
+        const reversText = userText.split('').reverse().join('');
+        alert(reversText);
+    };
 };
 
 // Игра "Викторина"
@@ -38,7 +44,12 @@ function startGame5() {
             output += '\n' + quiz[i].options[j];
         };
         output += '\nВведи только номер ответа';
-        userAnswer = Number(prompt(output));
+        userAnswer = (prompt(output));
+        if (userAnswer !== null) {
+            userChoice = Number(userAnswer);
+        } else {
+            return;
+        };
         
         //Проверка правильности ответа
         (userAnswer === quiz[i].correctAnswer) && pointsCounter++; 

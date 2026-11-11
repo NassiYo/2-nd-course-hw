@@ -2,7 +2,14 @@
 
 function startGame4() {
     const choices = ['камень', 'ножницы', 'бумага']; //массив возможных выриантов
-    let userChoice = prompt("Выбери: камень, ножницы или бумага?").toLowerCase(); //выбор пользователя сводится к нижнему регистру
+    let userChoice = prompt("Выбери: камень, ножницы или бумага?");
+    if (userChoice !== null) {
+        userChoice.toLowerCase();
+    } else {
+        
+        return;
+    };
+     //выбор пользователя сводится к нижнему регистру
     let compChoice = choices[Math.floor(Math.random() * 3)]; // выбор компьютера. Из массива возможных вариантов выбирается выриант по случайному индексу. Индекс - случайное число от 0 до 3, не включая 3. 
 
     if (choices.includes(userChoice)) {
@@ -86,22 +93,22 @@ function startGame4() {
 //    console.log('Привет, Глеб!');
 // });
 
-// Задача 5
-// Функция delayForSecond через 1 секунду пишет в консоль 
-// «Прошла одна секунда», а затем вызывает переданный колбэк
-function delayForSecond(cb) {
-    setTimeout(() => {
-        console.log('Прошла одна секунда');
-        if(cb) {  cb(); }
-    }, 1000)
-}
+// // Задача 5
+// // Функция delayForSecond через 1 секунду пишет в консоль 
+// // «Прошла одна секунда», а затем вызывает переданный колбэк
+// function delayForSecond(cb) {
+//     setTimeout(() => {
+//         console.log('Прошла одна секунда');
+//         if(cb) {  cb(); }
+//     }, 1000)
+// }
 
-// Функция sayHi выводит в консоль приветствие для указанного имени
-function sayHi (name) {
-    console.log(`Привет, ${name}!`);
-}
+// // Функция sayHi выводит в консоль приветствие для указанного имени
+// function sayHi (name) {
+//     console.log(`Привет, ${name}!`);
+// }
 
-// Код выше менять нельзя
+// // Код выше менять нельзя
 
-// Нужно изменить код ниже:
-delayForSecond(() => sayHi('Глеб'));
+// // Нужно изменить код ниже:
+// delayForSecond(() => sayHi('Глеб'));
